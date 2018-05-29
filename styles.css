@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 body {
   background-color: gold;
   color: purple;
@@ -22,6 +26,4 @@ button {
   width: 200px;
   padding: 20px 10px;
   border: solid 2px purple;
-  position: relative;
-  left: 525px;
 }
