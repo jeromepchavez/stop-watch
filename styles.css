@@ -1,0 +1,29 @@
+* {
+  text-align: center;
+}
+
+body {
+  background-color: gold;
+  color: purple;
+  font-family: 'Acme', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+}
+
+#elapsed-time {
+  text-align: center;
+  font-size: 75px;
+}
+
+button {
+  background: gold;
+  color: purple;
+  font-size: 1.2em;
+  font-family: 'Acme', sans-serif;
+  width: 200px;
+  padding: 20px 10px;
+  border: solid 2px purple;
+}
