@@ -1,7 +1,11 @@
-var $button = document.querySelector('#start-button')
+var $button = document.querySelector('.start-button')
+var $elapsedTime = document.querySelector('#elapsed-time')
 
-function update {
-  
+function updateTime () {
+  $elapsedTime.textContent = parseInt($elapsedTime.textContent) + 1
 }
 
-$button.addEventListener('click', update)
+
+$button.addEventListener('click', function () {
+  setInterval(updateTime, 1000)
+})

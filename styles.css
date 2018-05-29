@@ -9,7 +9,7 @@ h1 {
   font-size: 75px;
 }
 
-#elapsedtime {
+#elapsed-time {
   text-align: center;
   font-size: 75px;
 }
@@ -22,4 +22,6 @@ button {
   width: 200px;
   padding: 20px 10px;
   border: solid 2px purple;
+  position: relative;
+  left: 500px;
 }
