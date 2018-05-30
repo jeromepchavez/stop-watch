@@ -29,7 +29,7 @@ button {
 }
 
 .reset-button {
-  visibility: hidden;
+  display: none;
 }
 
 .running {
