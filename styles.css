@@ -24,6 +24,12 @@ button {
   width: 200px;
   padding: 20px 10px;
   border: solid 2px purple;
+  display: block;
+  margin: 10px auto;
+}
+
+.reset-button {
+  visibility: hidden;
 }
 
 .running {

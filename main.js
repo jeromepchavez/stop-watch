@@ -1,4 +1,4 @@
-var $button = document.querySelector('.start-button')
+var $startbutton = document.querySelector('.start-button')
 var $elapsedTime = document.querySelector('#elapsed-time')
 var isTimeRunning = false;
 var intervalTime
@@ -7,17 +7,17 @@ function updateTime () {
   $elapsedTime.textContent = parseInt($elapsedTime.textContent) + 1
 }
 
-$button.addEventListener('click', function () {
+$startbutton.addEventListener('click', function () {
   if (isTimeRunning){
     clearInterval(intervalTime)
-    $button.classList.remove('running')
-    $button.textContent = 'Resume'
+    $startbutton.classList.remove('running')
+    $startbutton.textContent = 'Resume'
     isTimeRunning = false
   }
   else {
     intervalTime = setInterval(updateTime, 1000)
-    $button.textContent = 'Pause'
-    $button.classList.add('running')
+    $startbutton.textContent = 'Pause'
+    $startbutton.classList.add('running')
     isTimeRunning = true;
   }
 })
