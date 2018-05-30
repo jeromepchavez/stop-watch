@@ -8,6 +8,14 @@ function updateTime () {
   $elapsedTime.textContent = parseInt($elapsedTime.textContent) + 1
 }
 
+function resetTime () {
+  clearInterval(intervalTime)
+  $startbutton.textContent = 'Start'
+  $elapsedTime.textContent = '0'
+  $resetbutton.style.display = 'none'
+  $startbutton.classList.remove('running')
+}
+
 function toggleReset () {
   var displaySetting = $resetbutton.style.display;
   if (displaySetting === 'block') {
@@ -35,3 +43,5 @@ $startbutton.addEventListener('click', function () {
     isTimeRunning = true;
   }
 })
+
+$resetbutton.addEventListener('click', resetTime)
