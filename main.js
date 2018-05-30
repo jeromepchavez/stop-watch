@@ -10,12 +10,14 @@ function updateTime () {
 $button.addEventListener('click', function () {
   if (isTimeRunning){
     clearInterval(intervalTime)
+    $button.classList.remove('running')
     $button.textContent = 'Resume'
     isTimeRunning = false
   }
   else {
     intervalTime = setInterval(updateTime, 1000)
     $button.textContent = 'Pause'
+    $button.classList.add('running')
     isTimeRunning = true;
   }
 })
