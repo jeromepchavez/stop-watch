@@ -14,6 +14,7 @@ function resetTime () {
   $elapsedTime.textContent = '0'
   $resetbutton.style.display = 'none'
   $startbutton.classList.remove('running')
+  isTimeRunning = false
 }
 
 function toggleReset () {
