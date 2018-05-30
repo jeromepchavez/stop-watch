@@ -12,6 +12,12 @@ h1 {
   font-size: 75px;
 }
 
+h2 {
+  visibility: hidden;
+  color: red;
+  font-size: 100px;
+}
+
 #elapsed-time {
   font-size: 75px;
 }
@@ -34,4 +40,20 @@ button {
 
 .running {
   background-color: lavender;
+}
+
+.expiredTime {
+  color: red;
+  font-size: 120px;
+}
+
+input {
+  font-size: 25px;
+  width: 100px;
+  background-color: gray;
+  color: purple;
+}
+
+p {
+  font-size: 25px;
 }

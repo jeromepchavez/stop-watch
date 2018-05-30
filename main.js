@@ -2,6 +2,7 @@ var $startbutton = document.querySelector('.start-button')
 var $resetbutton = document.querySelector('.reset-button')
 var $elapsedTime = document.querySelector('#elapsed-time')
 var $timelimit = document.querySelector('.time-limit-value')
+var $limitMessage = document.getElementById('message')
 var isTimeRunning = false;
 var intervalTime
 
@@ -12,10 +13,17 @@ function updateTime () {
   var elapsedTimeInt = parseInt($elapsedTime.textContent)
   if (userTimeLimit === elapsedTimeInt) {
     clearInterval(intervalTime)
+    expiredTime()
   }
   else {
     $elapsedTime.textContent = elapsedTimeInt + 1
   }
+}
+
+function expiredTime () {
+  $elapsedTime.classList.add('expiredTime')
+  $limitMessage.style.visibility = 'visible'
+
 }
 
 function resetTime () {
@@ -23,7 +31,9 @@ function resetTime () {
   $startbutton.textContent = 'Start'
   $elapsedTime.textContent = '0'
   $resetbutton.style.display = 'none'
+  $limitMessage.style.visibility = 'hidden'
   $startbutton.classList.remove('running')
+  $elapsedTime.classList.remove('expiredTime')
   isTimeRunning = false
 }
 
