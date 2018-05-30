@@ -9,12 +9,10 @@ body {
 }
 
 h1 {
-  text-align: center;
   font-size: 75px;
 }
 
 #elapsed-time {
-  text-align: center;
   font-size: 75px;
 }
 
@@ -26,4 +24,8 @@ button {
   width: 200px;
   padding: 20px 10px;
   border: solid 2px purple;
+}
+
+.running {
+  background-color: lavender;
 }
